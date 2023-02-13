@@ -4,12 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{% block title %} DATA Department of TCI Khorasan{% endblock %}</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" href="{% static 'base.css' %}"  />
-        {% block site_css %} {% endblock %}
+        <title>DATA Department of TCI Khorasan{% endblock %}
+       
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -42,18 +38,11 @@
         </nav>
         <!-- Page Content-->
         <header id="main_header">
-            <h1>{% block main_heading %} {% endblock %}</h1>
-            {% block header_content %} {% endblock %}
+           
         </header>
 
         <main>
-            {% block body %} {% endblock %}
-		{% if user.is_authenticated %}
-                You Loged in as: {{ user.username }}!
-            {% else %}
-                <p>___You are not logged in___</p>
-            {% endif %}
-		
+           
         </main>
 
         <!-- Footer-->
@@ -63,6 +52,6 @@
         <!-- Bootstrap core JS-->
         
             <!-- Core theme JS-->
-        <script src="{% static 'scripts.js' %}"></script>
+        
     </body>
 </html>
